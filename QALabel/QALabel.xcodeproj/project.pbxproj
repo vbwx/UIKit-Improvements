@@ -10,12 +10,11 @@
 		E604CAFD1533547F00F0EA0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E604CAFC1533547F00F0EA0E /* UIKit.framework */; };
 		E604CAFF1533547F00F0EA0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E604CAFE1533547F00F0EA0E /* Foundation.framework */; };
 		E604CB011533547F00F0EA0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E604CB001533547F00F0EA0E /* CoreGraphics.framework */; };
-		E604CB071533547F00F0EA0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E604CB051533547F00F0EA0E /* InfoPlist.strings */; };
 		E604CB091533547F00F0EA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E604CB081533547F00F0EA0E /* main.m */; };
 		E604CB0D1533547F00F0EA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E604CB0C1533547F00F0EA0E /* AppDelegate.m */; };
 		E604CB101533547F00F0EA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E604CB0F1533547F00F0EA0E /* ViewController.m */; };
-		E604CB131533547F00F0EA0E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E604CB111533547F00F0EA0E /* ViewController.xib */; };
 		E604CB1B153354C100F0EA0E /* QALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E604CB1A153354C100F0EA0E /* QALabel.m */; };
+		E604CB3015342E8700F0EA0E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E604CB3115342E8700F0EA0E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,16 +23,15 @@
 		E604CAFE1533547F00F0EA0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E604CB001533547F00F0EA0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E604CB041533547F00F0EA0E /* QALabel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QALabel-Info.plist"; sourceTree = "<group>"; };
-		E604CB061533547F00F0EA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E604CB081533547F00F0EA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E604CB0A1533547F00F0EA0E /* QALabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QALabel-Prefix.pch"; sourceTree = "<group>"; };
 		E604CB0B1533547F00F0EA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E604CB0C1533547F00F0EA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E604CB0E1533547F00F0EA0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E604CB0F1533547F00F0EA0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E604CB121533547F00F0EA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		E604CB19153354C100F0EA0E /* QALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QALabel.h; sourceTree = "<group>"; };
 		E604CB1A153354C100F0EA0E /* QALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QALabel.m; sourceTree = "<group>"; };
+		E604CB3115342E8700F0EA0E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E604CB041533547F00F0EA0E /* QALabel-Info.plist */,
-				E604CB051533547F00F0EA0E /* InfoPlist.strings */,
-				E604CB111533547F00F0EA0E /* ViewController.xib */,
+				E604CB3115342E8700F0EA0E /* ViewController.xib */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -170,8 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E604CB071533547F00F0EA0E /* InfoPlist.strings in Resources */,
-				E604CB131533547F00F0EA0E /* ViewController.xib in Resources */,
+				E604CB3015342E8700F0EA0E /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,25 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E604CB051533547F00F0EA0E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E604CB061533547F00F0EA0E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E604CB111533547F00F0EA0E /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E604CB121533547F00F0EA0E /* en */,
-			);
-			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E604CB141533547F00F0EA0E /* Debug */ = {

@@ -4,6 +4,10 @@
 //  Created by Bernhard Waldbrunner on 12/4/9.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
+//  Special thanks to:
+//  http://stackoverflow.com/users/411823/d-s
+//  http://stackoverflow.com/users/74118/nevan-king
+//
 
 @interface QALabel : UILabel
 {
@@ -13,5 +17,6 @@
 }
 
 @property(assign) UIControlContentVerticalAlignment verticalAlignment;
+@property(readonly) NSInteger displayedLines;
 
 @end

@@ -11,14 +11,6 @@
 
 @implementation ViewController
 
-#pragma mark - View lifecycle
-
-- (void) viewDidLoad
-{
-    [super viewDidLoad];
-    lines = 0;
-}
-
 - (IBAction) changeAlignment:(id)sender
 {
     switch (((UISegmentedControl*)sender).selectedSegmentIndex)
@@ -34,6 +26,23 @@
             break;
         case 3:
             label.verticalAlignment = UIControlContentVerticalAlignmentFill;
+            break;
+    }
+    NSLog(@"%d / %d", label.numberOfLines, label.displayedLines);
+}
+
+- (IBAction) changeHorizontalAlignment:(id)sender
+{
+    switch (((UISegmentedControl*)sender).selectedSegmentIndex)
+    {
+        case 0:
+            label.textAlignment = UITextAlignmentLeft;
+            break;
+        case 1:
+            label.textAlignment = UITextAlignmentCenter;
+            break;
+        case 2:
+            label.textAlignment = UITextAlignmentRight;
             break;
     }
 }

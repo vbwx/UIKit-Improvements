@@ -11,9 +11,9 @@
 @interface ViewController : UIViewController
 {
     IBOutlet QALabel *label;
-    short lines;
 }
 
 - (IBAction) changeAlignment:(id)sender;
+- (IBAction) changeHorizontalAlignment:(id)sender;
 
 @end
