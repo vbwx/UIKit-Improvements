@@ -1,8 +1,8 @@
 //
 //  QALabel.h
 //
-//  Created by Bernhard Waldbrunner on 12/4/9.
-//  Copyright (c) 2012 QuantApps. All rights reserved.
+//  Created by Bernhard Waldbrunner on 12/4/9
+//  Copyright (c) 2012 QuantApps
 //
 //  Special thanks to:
 //  http://stackoverflow.com/users/411823/d-s
