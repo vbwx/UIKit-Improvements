@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TestViewController.h
 //  QALabel
 //
 //  Created by Bernhard Waldbrunner on 12/4/9.
@@ -8,7 +8,7 @@
 
 #import "QALabel.h"
 
-@interface ViewController : UIViewController
+@interface TestViewController : UIViewController
 {
     IBOutlet QALabel *label;
 }

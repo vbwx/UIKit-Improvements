@@ -1,15 +1,15 @@
 //
-//  ViewController.m
+//  TestViewController.m
 //  QALabel
 //
 //  Created by Bernhard Waldbrunner on 12/4/9.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TestViewController.h"
 
 
-@implementation ViewController
+@implementation TestViewController
 
 - (IBAction) changeAlignment:(id)sender
 {

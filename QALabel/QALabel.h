@@ -14,9 +14,11 @@
     UIControlContentVerticalAlignment verticalAlign;
     short addedLines;
     CGFloat originalHeight;
+    UIColor *originalShadow, *highlightedShadow;
 }
 
 @property(assign) UIControlContentVerticalAlignment verticalAlignment;
 @property(readonly) NSInteger displayedLines;
+@property(nonatomic, retain) UIColor *highlightedShadowColor;
 
 @end

@@ -1,16 +1,16 @@
 //
-//  AppDelegate.m
+//  TestAppDelegate.m
 //  QALabel
 //
 //  Created by Bernhard Waldbrunner on 12/4/9.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "ViewController.h"
+#import "TestAppDelegate.h"
+#import "TestViewController.h"
 
 
-@implementation AppDelegate
+@implementation TestAppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -26,7 +26,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    self.viewController = [[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

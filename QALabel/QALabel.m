@@ -15,6 +15,9 @@
 
 @implementation QALabel
 
+@synthesize highlightedShadowColor = highlightedShadow;
+
+
 - (id) initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame])
@@ -22,14 +25,43 @@
         verticalAlign = UIControlContentVerticalAlignmentCenter;
         addedLines = 0;
         originalHeight = frame.size.height;
+        self.opaque = NO;
+        self.backgroundColor = CLEAR;
+        self.highlightedShadowColor = CLEAR;
+    }
+    return self;
+}
+
+- (id) initWithCoder:(NSCoder*)coder
+{
+    if (self = [super initWithCoder:coder])
+    {
+        addedLines = 0;
+        self.highlightedShadowColor = CLEAR;
     }
     return self;
 }
 
 - (void) setFrame:(CGRect)frame
 {
-    [super setFrame:frame];
+    super.frame = frame;
     originalHeight = frame.size.height;
+}
+
+- (void) setShadowColor:(UIColor*)shadowColor
+{
+    super.shadowColor = shadowColor;
+    if (shadowColor != originalShadow)
+    {
+        DEL(originalShadow);
+        originalShadow = [shadowColor retain];
+    }
+}
+
+- (void) setHighlighted:(BOOL)highlighted
+{
+    super.shadowColor = (highlighted ? highlightedShadow : originalShadow);
+    super.highlighted = highlighted;
 }
 
 - (UIControlContentVerticalAlignment) verticalAlignment
@@ -92,6 +124,13 @@
         super.frame = frame;
     }
     verticalAlign = alignment;
+}
+
+- (void) dealloc
+{
+    DEL(originalShadow);
+    DEL(highlightedShadow);
+    [super dealloc];
 }
 
 @end
