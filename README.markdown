@@ -5,9 +5,6 @@ way you want. That's where our improvements come in.
 This is a collection of Xcode projects consisting of categories and subclasses
 that have been designed to be easy to use.
 
-To see these improvements "in the wild", just take a look at our apps! More
-information at [quantapps.com](http://www.quantapps.com "QuantApps").
-
 Projects
 --------
 ### QALabel ###
