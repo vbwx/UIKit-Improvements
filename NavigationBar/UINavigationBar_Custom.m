@@ -38,11 +38,15 @@ static NSString *const BackgroundFile = @"bg-navbar.png";
     return NO;
 }
 
-+ (void) customizeAppearance
+- (void) customizeAppearance
 {
-    if ([UINavigationBar respondsToSelector:@selector(appearance)])
+    if ([UINavigationBar respondsToSelector:@selector(appearance)] && self.tag != 9999)
+    {
+        self.tag = 9999;
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:BackgroundFile]
                                       forBarMetrics:UIBarMetricsDefault];
+    }
+    self.clipsToBounds = NO;
 }
 
 @end

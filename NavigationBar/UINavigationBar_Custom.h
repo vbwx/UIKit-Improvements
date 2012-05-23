@@ -7,6 +7,6 @@
 
 @interface UINavigationBar (CustomNavBar)
 
-+ (void) customizeAppearance;
+- (void) customizeAppearance;
 
 @end

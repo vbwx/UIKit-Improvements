@@ -30,10 +30,7 @@
     MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
     
-    [UINavigationBar customizeAppearance]; // This is necessary for iOS 5 and up.
-    // The following hack would not be necessary if the navigation controller got created in the XIB file.
-    // Otherwise, the custom border would not appear.
-    self.navigationController.navigationBar.clipsToBounds = NO;
+    [self.navigationController.navigationBar customizeAppearance]; // This is necessary for iOS 5 and up.
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
