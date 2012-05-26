@@ -23,9 +23,9 @@ static NSString *const BackgroundFile = @"bg-navbar.png";
 - (void) setClipsToBounds:(BOOL)ignore
 {
     UIImageView *img;
-    if (![self viewWithTag:9999] && (img = QAImage(@"navbar.png")))
+    if (self.tag != 9999 && (img = QAImage(@"navbar.png")))
     {
-        img.tag = 9999;
+        self.tag = 9999;
         CGRect r = img.frame;
         r.origin = CGPointMake(0, self.frame.size.height - 1);
         img.frame = r;
@@ -46,7 +46,8 @@ static NSString *const BackgroundFile = @"bg-navbar.png";
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:BackgroundFile]
                                       forBarMetrics:UIBarMetricsDefault];
     }
-    self.clipsToBounds = NO;
+    else
+        self.clipsToBounds = NO;
 }
 
 @end

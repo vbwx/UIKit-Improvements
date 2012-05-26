@@ -30,7 +30,8 @@
     MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
     
-    [self.navigationController.navigationBar customizeAppearance]; // This is necessary for iOS 5 and up.
+    // This is necessary for iOS 5 and up, or if you create the navigation bar programmatically.
+    [self.navigationController.navigationBar customizeAppearance];
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
