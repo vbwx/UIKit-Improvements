@@ -1,7 +1,7 @@
 //
 //  UIButton_Custom.m
 //
-//  Created by Bernhard Waldbrunner on 12/4/12.
+//  Created by vbwx on 12/4/12.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 

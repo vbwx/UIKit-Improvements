@@ -1,7 +1,7 @@
 //
 //  UIView_Additions.h
 //
-//  Created by Bernhard Waldbrunner on 12/3/12.
+//  Created by vbwx on 12/3/12.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 

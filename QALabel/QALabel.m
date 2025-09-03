@@ -1,7 +1,7 @@
 //
 //  QALabel.m
 //
-//  Created by Bernhard Waldbrunner on 12/4/9
+//  Created by vbwx on 12/4/9
 //  Copyright (c) 2012 QuantApps
 //
 //  Special thanks to:
@@ -73,7 +73,7 @@
 {
     if (super.numberOfLines == 1)
         return 1;
-    
+
     CGFloat fontHeight = [self.text sizeWithFont:self.font].height;
     CGFloat stringHeight = [self.text sizeWithFont:self.font constrainedToSize:self.frame.size
                                       lineBreakMode:self.lineBreakMode].height;
@@ -84,7 +84,7 @@
 {
     if (verticalAlign == alignment)
         return;
-    
+
     if (addedLines > 0)
     {
         self.text = (verticalAlign == UIControlContentVerticalAlignmentTop ?
@@ -102,7 +102,7 @@
     CGFloat stringHeight = [self.text sizeWithFont:self.font constrainedToSize:self.frame.size
                                       lineBreakMode:self.lineBreakMode].height;
     self.numberOfLines = (alignment == UIControlContentVerticalAlignmentFill ? roundf(stringHeight / fontHeight) : 0);
-    
+
     if (alignment == UIControlContentVerticalAlignmentBottom || alignment == UIControlContentVerticalAlignmentTop)
     {
         addedLines = roundf((self.frame.size.height - stringHeight) / fontHeight);

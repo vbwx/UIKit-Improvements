@@ -1,7 +1,7 @@
 /*
  *  QAUtilities.h
  *
- *  Created by Bernhard Waldbrunner on 4/1/11.
+ *  Created by vbwx on 4/1/11.
  *  Copyright 2011-2012 QuantApps. All rights reserved.
  *
  */

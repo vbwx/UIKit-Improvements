@@ -2,7 +2,7 @@
 //  MasterViewController.m
 //  NavigationBar
 //
-//  Created by Bernhard Waldbrunner on 12/5/21.
+//  Created by vbwx on 12/5/21.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
@@ -55,7 +55,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];

@@ -1,7 +1,7 @@
 //
 //  UINavigationItem_Custom.m
 //
-//  Created by Bernhard Waldbrunner on 12/4/9.
+//  Created by vbwx on 12/4/9.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ static const CGFloat ShadowAlpha = 0.5;
 {
     if (!item)
         return nil;
-    
+
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *bg = [[UIImage imageNamed:@"barbutton.png"] stretchableImageWithLeftCapWidth:6 topCapHeight:0];
     UIImage *bgSel = [[UIImage imageNamed:@"barbutton-sel.png"] stretchableImageWithLeftCapWidth:6 topCapHeight:0];
@@ -33,7 +33,7 @@ static const CGFloat ShadowAlpha = 0.5;
     button.titleLabel.shadowOffset = CGSizeMake(0, 1);
     button.tag = 1111;
     [button mimicBarButton:item];
-    
+
     return button;
 }
 

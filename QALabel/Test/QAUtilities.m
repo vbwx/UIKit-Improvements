@@ -1,7 +1,7 @@
 /*
  *  QAUtilities.m
  *
- *  Created by Bernhard Waldbrunner on 4/1/11.
+ *  Created by vbwx on 4/1/11.
  *  Copyright 2011-2012 QuantApps. All rights reserved.
  *
  */
@@ -73,7 +73,7 @@ BOOL QASerialize (NSString *path, id plist, BOOL alert)
 {
     if (!path || !plist || EQ(path, @""))
         return NO;
-    
+
     NSString *desc = nil;
     NSError *err = nil;
     NSData *data = ([NSPropertyListSerialization respondsToSelector:
@@ -93,7 +93,7 @@ BOOL QASerialize (NSString *path, id plist, BOOL alert)
     }
     else
         QAErrorAlert(desc == nil ? [err description] : [desc autorelease]);
-    
+
     return NO;
 }
 
@@ -101,7 +101,7 @@ BOOL QADeserialize (NSString *path, id *plist, BOOL alert)
 {
     if (!path || !plist || EQ(path, @""))
         return NO;
-    
+
     NSString *desc = nil;
     NSError *err = nil;
     NSFileManager *fileman = [NSFileManager defaultManager];

@@ -2,7 +2,7 @@
 //  DetailViewController.m
 //  NavigationBar
 //
-//  Created by Bernhard Waldbrunner on 12/5/21.
+//  Created by vbwx on 12/5/21.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
@@ -33,8 +33,8 @@
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
+        [_detailItem release];
+        _detailItem = [newDetailItem retain];
 
         // Update the view.
         [self configureView];

@@ -1,7 +1,7 @@
 //
 //  QAPatternView.m
 //
-//  Created by Bernhard Waldbrunner on 12/4/6.
+//  Created by vbwx on 12/4/6.
 //  Copyright (c) 2012 QuantApps. All rights reserved.
 //
 
@@ -18,7 +18,7 @@
         self.tag = 8888;
         UIImageView *img;
         CGRect r;
-        
+
         if ((img = QAImage(@"bottom.png")))
         {
             img.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
